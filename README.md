@@ -27,3 +27,8 @@ tweaks, including key bindings. Example changes:
 
 * Super+Left and Right to switch tabs in Terminal
 * Super+Q to close the current Window (closest we can get to hard Quit)
+
+Chrome
+------
+
+The chrome dir contains various tweaks to make Chrome work like it does on OS X.
