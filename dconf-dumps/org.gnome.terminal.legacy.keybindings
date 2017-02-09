@@ -1,0 +1,9 @@
+[/]
+new-tab='<Super>t'
+copy='<Super>c'
+prev-tab='<Alt>Left'
+new-window='<Super>n'
+close-tab='<Super>w'
+close-window='disabled'
+paste='<Super>v'
+next-tab='<Alt>Right'

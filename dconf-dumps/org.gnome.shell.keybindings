@@ -1,0 +1,5 @@
+[/]
+toggle-message-tray=['<Shift><Super>Explorer', '<Super>m']
+toggle-overview=['<Super>space']
+toggle-application-view=['LaunchA']
+focus-active-notification=['<Shift><Alt><Meta>Explorer']

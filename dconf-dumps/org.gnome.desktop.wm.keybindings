@@ -1,0 +1,5 @@
+[/]
+close=['<Super>q']
+switch-input-source-backward=['<Primary><Shift><Super>space']
+switch-input-source=['<Primary><Super>space']
+panel-main-menu=['Explorer', '<Alt>F1']

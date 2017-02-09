@@ -1,0 +1,12 @@
+[/]
+screenshot-clip='<Primary><Shift><Super>numbersign'
+decrease-text-size='<Super>minus'
+magnifier-zoom-out='<Primary><Super>minus'
+area-screenshot-clip='<Primary><Shift><Super>dollar'
+screenshot='<Shift><Super>numbersign'
+magnifier-zoom-in='<Primary><Super>equal'
+home='<Shift><Alt><Meta>Home'
+increase-text-size='<Super>equal'
+screensaver='<Primary><Shift><Alt><Meta><Super>Escape'
+area-screenshot='<Shift><Super>dollar'
+custom-keybindings=@as []
