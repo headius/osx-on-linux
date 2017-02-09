@@ -1,0 +1,65 @@
+/*
+ * GTK - The GIMP Toolkit
+ * Copyright (C) 2002 Owen Taylor
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS
+ * file for a list of people on the GTK+ Team.  See the ChangeLog
+ * files for a list of changes.  These files are distributed with
+ * GTK+ at ftp://ftp.gtk.org/pub/gtk/.
+ */
+
+/*
+ * A keybinding set implementing Emacs-like keybindings
+ */
+
+/*
+ * Bindings for GtkTextView and GtkEntry
+ */
+@binding-set gtk-emacs-text-entry
+{
+  bind "<super>Left" { "move-cursor" (paragraph-ends, -1, 0) };
+  bind "<ctrl>a" { "move-cursor" (paragraph-ends, -1, 0) };
+  bind "<shift><ctrl>a" { "move-cursor" (paragraph-ends, -1, 1) };
+  bind "<ctrl>e" { "move-cursor" (paragraph-ends, 1, 0) };
+  bind "<super>Right" { "move-cursor" (paragraph-ends, 1, 0) };
+  bind "<shift><super>e" { "move-cursor" (paragraph-ends, 1, 1) };
+
+  bind "<super>x" { "cut-clipboard" () };
+  bind "<super>c" { "copy-clipboard" () };
+  bind "<super>v" { "paste-clipboard" () };
+}
+
+/*
+ * Bindings for GtkTreeView
+ */
+@binding-set gtk-emacs-tree-view
+{
+  bind "<super>f" { "start-interactive-search" () };
+}
+
+entry {
+  -gtk-key-bindings: gtk-emacs-text-entry;
+}
+
+textview {
+  -gtk-key-bindings: gtk-emacs-text-entry;
+}
+
+treeview {
+  -gtk-key-bindings: gtk-emacs-tree-view;
+}
